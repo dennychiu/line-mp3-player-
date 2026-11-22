@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>語音持誦播放器</title>
+<style>
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(160deg,#f7f3eb,#e9e1d2);
+  font-family: sans-serif;
+  color: #342b22;
+}
+main {
+  width: 85%;
+  max-width: 420px;
+  padding: 30px 20px;
+  border-radius: 24px;
+  background: white;
+  text-align: center;
+  box-shadow: 0 8px 30px #0002;
+}
+.symbol { font-size: 48px; }
+h1 { font-size: 25px; }
+p { color: #756b60; line-height: 1.7; }
+audio { width: 100%; margin: 25px 0; }
+</style>
+</head>
+<body>
+<main>
+  <div class="symbol">🙏</div>
+  <h1>語音持誦</h1>
+  <p>靜心聆聽・隨喜持誦</p>
+  <audio controls preload="metadata">
+    <source src="audio.mp3" type="audio/mpeg">
+    您的瀏覽器不支援音訊播放。
+  </audio>
+  <p>請按播放鍵開始聆聽</p>
+</main>
+</body>
+</html>
